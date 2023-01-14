@@ -1,0 +1,126 @@
+/*top, left, bottom, right*/
+body{display: flex;
+justify-content: center;
+flex-direction: column;}
+:root{
+    --title: 2.5rem;
+    --mid: 1.6rem;
+    --desc: 1.5625rem;
+}
+.intro{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.intro__title{
+    font-size: var(--title);
+    font-family: var(--suez);
+    color: var(--darkblue);
+}
+.intro p{
+    margin-top: 1rem;
+    color: var(--darkblue);
+    font-size: 1.5625rem;
+}
+.cart{
+    width: 4rem;
+    height: 4rem;
+    margin-top: 3rem;
+    align-self: flex-start;
+    margin-left: 75%;
+}
+.cart img{
+    width: 4rem;
+    height: 4rem;
+}
+.products{
+    margin-top: 3rem;
+    align-self: center;
+    width: 75%;
+    /* margin-left: 5rem;
+    margin-right: 5rem; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow:row;
+    justify-items: center;
+    align-items: center;
+}
+.product{
+    color: var(--darkblue);
+    /* width: 36.125rem;
+    height: 48.25rem; */
+    width: 31.25rem;
+    height: 37.9375rem;
+    display: grid;
+    grid-template-areas: 
+    "image image"
+    "info info";
+    /* justify-items: center;
+    align-items: center; */
+    padding: 1rem;
+    margin: 2rem;
+    /* background-color: grey; */
+}
+.product:hover .product__image{
+   transform: scale(1.10);
+}
+.product__info{
+    grid-area: info;
+    display: grid;
+    grid-template-areas: 
+    "firstline firstline"
+    "desc desc"
+    ". button";
+    margin: 1rem;
+    justify-self: center;
+}
+.product__image{
+    grid-area: image;
+    width: 75%;
+    height: auto;
+    justify-self: center;
+    /*hovering parent element increases img size*/
+    transition-property: all;
+    transition-duration: 1s;
+}
+.product__info--firstLine{ 
+    grid-area: firstline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    width:100%;
+}
+.product__info--firstLine h2{
+    display: inline-block;
+    font-family: 'Suez One', serif;
+    font-size: var(--title);
+    white-space: nowrap;
+}
+.product__info--firstLine p{
+    font-weight:700;
+    font-size: var(--mid);
+    width: 100%;
+    /* display: inline-block; */
+    margin-left: 7rem;
+}
+.product__info--desc{
+    grid-area: desc;
+    width: 100%;
+    font-size: var(--desc);
+}
+.storeButton{
+    grid-area: button;
+    background-color: var(--yellow);
+    color: white;
+    border: none;
+    font-size: var(--mid);
+    font-family: 'Suez One', serif;
+    width: 15rem;
+    height: 3,1875;
+    margin: 1rem;
+    padding: 1rem, 2rem;
+}

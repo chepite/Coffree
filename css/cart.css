@@ -1,0 +1,142 @@
+body {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  font-family: var(--open);
+  font-size: 1rem;
+}
+section{
+  margin-bottom: 8rem;
+}
+h2 {
+  margin-bottom: 2rem;
+  font-family: var(--suez);
+  font-size: var(--title);
+  color: var(--darkblue);
+}
+.cart__image {
+  justify-self: center;
+  width: 6rem;
+  height: auto;
+}
+button {
+  background-color: var(--darkblue);
+  font-family: var(--suez);
+  font-size: var(--small);
+  border: none;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.8125rem;
+  width: 8.8125rem;
+  height: 3rem;
+}
+button[name="remove"] {
+  background-color: var(--red);
+  font-family: var(--suez);
+  font-size: var(--small);
+  width: 7rem;
+  height: 3rem;
+  padding: 0.5rem;
+  margin-top : 1rem;
+  margin-bottom: 1rem;
+}
+.input-quantity {
+  border: none;
+  background-color: var(--darkblue);
+  color: #fff;
+  width: 5rem;
+  height: 3rem;
+  font-family: var(--suez);
+  font-size: var(--small);
+  padding: 0.5rem;
+  border-radius: 0.8125rem;
+}
+/* tr{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+} */
+td {
+  align-self: center;
+}
+table {
+  margin-bottom: 2rem;
+}
+.cart-table {
+  width: 60rem;
+}
+section {
+  margin-top: 5rem;
+  align-self: center;
+}
+.cart__small {
+  align-self: top;
+  
+}
+.cart-table__item-image {
+  display:flex;
+  align-content: flex-start;
+  margin: 1rem;
+}
+.cart-table__item-price {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+.finaltotal{
+  font-weight: 600;
+}
+.cart-table__item-quantity{
+  font-weight: 600;
+  text-align: end;
+  padding-right:1rem;
+  font-size: 1.3rem;
+}
+th{
+  text-align: left;
+}
+.cart__small{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.mb-2, .mb-4{
+  margin: 1rem;
+}
+.mb-2 .btn{
+  width: 10rem;
+  background-color: var(--yellow);
+}
+thead{
+  border-bottom: solid var(--midlightblue) 5px;
+}
+tfoot{
+  border-top: solid var(--midlightblue) 5px;
+}
+tbody tr{
+  border-bottom: solid var(--midlightblue) 1px;
+  border-bottom: solid var(--midlightblue) 1px;
+}
+.email{
+  font-family: var(--open);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--darkblue);
+  display: flex;
+  flex-direction: column;
+}
+label{
+  font-weight: 600;
+}
+input[type='email']{
+  border: none;
+    background-color: #fff;
+    border-radius: .8125rem;
+    width: 25rem;
+    height: 4rem;
+    font-size: var(--mid);
+    font-family: var(--open);
+    font-weight: 600;
+}
+

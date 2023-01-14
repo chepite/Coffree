@@ -1,0 +1,107 @@
+body{display: flex;
+    justify-content: center;
+    flex-direction: column;}
+/* input[type=text], input[type=password] {
+    border: none;
+    background-color: #fff;
+    border-radius: .8125rem;
+    width: 35rem;
+    height: 6rem;
+    margin: 2rem;
+    font-size: var(--mid);
+    font-family: var(--open);
+    font-weight: 600;
+}
+select {
+    border: none;
+    background-color: #fff;
+    border-radius: .8125rem;
+    width: 35rem;
+    height: 6rem;
+    margin: 2rem;
+    font-size: var(--mid);
+    font-family: var(--open);
+    font-weight: 600;
+} */
+form{
+    display: flex;
+    align-items: center;
+    width: 20rem;
+}
+input[type=text], input[type=password] {
+    border: none;
+    background-color: #fff;
+    border-radius: .8125rem;
+    width: 25rem;
+    height: 4rem;
+    margin: 2rem;
+    font-size: var(--mid);
+    font-family: var(--open);
+    font-weight: 600;
+}
+select {
+    border: none;
+    background-color: #fff;
+    border-radius: .8125rem;
+    width: 25rem;
+    height: 4rem;
+    margin: 2rem;
+    font-size: var(--mid);
+    font-family: var(--open);
+    font-weight: 600;
+}
+/* input[type=submit]{
+    font-family: var(--suez);
+    font-size: var(--title);
+    border: none;
+    background-color: var(--yellow);
+    color: #fff;
+    width: 10.0625rem;
+    height: 5.4375rem;
+    border-radius: .8125rem;
+    margin: 1rem;
+    align-self:center;
+} */
+input[type=submit]{
+    font-family: var(--suez);
+    font-size: var(--title);
+    border: none;
+    background-color: var(--yellow);
+    color: #fff;
+    width:max-content;
+    height: auto;
+    border-radius: .8125rem;
+    margin: 1rem;
+    padding:0.5rem 1rem;
+}
+.formLine{
+    align-self: center;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+label{
+    color: var(--darkblue);
+    font-size: var(--mid);
+    font-family: var(--suez);
+    margin-left: 2rem;
+    align-self: flex-start;
+}
+form{
+    margin: 3rem;
+    margin-top: 5rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 36rem;
+}
+.signup{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.signup__text{
+    font-size: 1.3rem;
+    font-family: var(--suez);
+    color: var(--darkblue);
+}

@@ -1,0 +1,239 @@
+/* body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+} */
+.content{
+    justify-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    margin:1rem;
+    margin-top: 3rem;
+    font-family: var(--suez);
+    color: var(--darkblue);
+    font-size: var(--title);
+    text-align: center;
+}
+.div__header{
+    margin:2rem;
+    margin-top: 3rem;
+    font-family: var(--suez);
+    color: var(--darkblue);
+    font-size: var(--title);
+    text-align: left;
+}
+.page_description{
+    margin: 1rem;
+    width: 60rem;
+    font-family: var(--open);
+    color: var(--darkblue);
+    font-size: var(--desc);
+    text-align: center;
+}
+/*content bij de character/bovenkant page*/
+.top-content{
+    display: grid;
+    grid-template-areas: 
+    "character coffee"
+    "character coffee";
+    margin: 2rem;
+    margin-bottom:4rem;
+    align-items: center;
+}
+.top-content h2{
+    font-size: var(--title);
+    font-family: var(--suez);
+    color: var(--darkblue);
+}
+
+
+.preview{
+    grid-area: character;
+    /* border: solid red 1px; */
+}
+
+
+.coffee{
+    color: var(--darkblue);
+    grid-area: coffee;
+    display: flex;
+    flex-direction: column;
+}
+.coffee__recommended{
+    margin: 1rem;
+}
+.coffee__recommended--amount{
+    margin:1rem;
+}
+.coffee__consumed{
+    margin: 1rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.coffee__consumed--add{
+    margin: 1rem;
+    display: flex;
+    align-items: center
+}
+.coffee__consumed--add p, .coffee__recommended--amount{
+    font-size: 3rem;
+    font-family: var(--suez);
+}
+.addButton{
+    color: #fff;
+    margin-left: 2rem;
+    background-color: var(--red);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    border: none;
+    font-size: 3rem;
+    font-family: var(--suez);
+}
+
+.highlight {
+  /*class for highlighting the streaks current item in the progress bar*/
+  font-family: var(--suez);
+   transform: scale(1.1);
+   box-shadow:0px 0px .3125rem .3125rem var(--yellow);
+}
+/*progress list css*/
+/*maak progress list hetzelfde als de brewery qua stijl maar laat de desc pas tonen zoals de
+info van brewery als je hovert -> met transition werken etc*/
+/*LAAT NU GEWN MET TRANSITION ENKEL VERSCHIJNEN ALS JE HOVERT*/
+.progressList {
+    border-radius: .8125rem;
+    margin: 2rem;
+    margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  width: 65rem;
+  background-color: var(--lightblue);
+  justify-content: center;
+  position : relative;
+}
+.progressList__item--image{
+    width: 15rem;
+    height: auto;
+    position: absolute;
+}
+.progressList__item {
+    margin: 2rem;
+    width: 15rem;
+    height: 15rem;
+    /* background-color: grey; */
+    border-radius: .8125rem;
+    display: flex;
+    overflow:hidden;
+  }
+.progressList__item--info{
+    opacity: 0;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: var(--midlightblue);
+    color: #fff;
+    font-family: var(--open);
+    font-weight: 600;
+    border-radius: .8125rem;
+    /*when hovering parent*/
+    transition-property: all;
+    transition-duration: 1s;
+}
+.progressList__item:hover .progressList__item--info{
+    opacity:1;
+}
+.progressList__item--title {
+    font-family: var(--suez);
+    font-weight: 500;
+}
+.progressList__item--desc {
+    font-size: var(--small);
+    padding: 0.5rem;
+}
+.medal__image{
+    width: 10rem;
+    height: auto;
+}
+
+.trippy {
+    animation: colorRotate 3s linear infinite;
+  }
+  .trippy .preview__head{
+      animation: spin 1.5s linear infinite;
+  }
+  @keyframes colorRotate {
+    100% {
+      -webkit-filter: hue-rotate(360deg);
+    }
+    }
+    @-webkit-keyframes spin { 
+        from { 
+            -webkit-transform: rotate(0deg); 
+        } to { 
+            -webkit-transform: rotate(360deg); 
+        }
+    }
+    .chartConsume{
+        display: flex;
+        width: 65rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .chartBig{
+        align-self: center;
+        margin: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    .consumed{
+        display: flex;
+    }
+    .chart__text{
+        margin-left:1rem;
+        font-family: var(--suez);
+        color: var(--darkblue);
+        font-size: var(--title);
+    }
+    .mug__div{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .mug__div--recommended{
+        margin-top: 3rem;
+    }
+    .mug{
+        width: 128px;
+        height: auto;
+        margin-right: 1rem;
+    }
+/*end progress list css*/
+
+.logout{
+    display: flex;
+    justify-content: center;
+}
+.logout__link{
+    align-self: center;
+  font-family: var(--suez);
+  font-size: var(--title);
+  border: none;
+  background-color: var(--red);
+  color: #fff;
+  width: max-content;
+  height: auto;
+  border-radius: 0.8125rem;
+  margin: 1rem;
+  margin-top: 10rem;
+  padding: 1rem 1rem;
+  margin-bottom: 3rem;
+}
